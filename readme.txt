@@ -2,7 +2,7 @@
 Contributors: sjwright1986
 Tags: sea, tide, tide tables, tide times, UK, Ireland
 Requires at least: 4.3
-Tested up to: 4.9
+Tested up to: 5.6
 Stable tag: trunk
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -116,6 +116,9 @@ If using a shortcode, add the parameter 'map=true'. If you're using a sidebar wi
 4. Bellach ar gael yn y Gymraeg! Now available in Welsh!
 
 == Changelog ==
+
+= 1.3.2 =
+Fixed Guzzle issue, added docker-compose
 
 = 1.2.0 =
 Fixed issue where older PHP versions would error. Thanks Joe Johnson for pointing this out
