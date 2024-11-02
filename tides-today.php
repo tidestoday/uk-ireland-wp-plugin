@@ -5,9 +5,9 @@ use \TidesToday\TideTimes\Plugin;
 
 /*
 Plugin Name: Tides Today UK and Ireland Tide Times
-Plugin URI:  https://tides.today/three-day-forecast-plugin
+Plugin URI:  https://tides.today/en/developer
 Description: The Tides Today UK and Ireland Tide Times plugin provides 3 day tide forecasts for over 700 UK and Ireland locations.
-Version:     1.3.4
+Version:     1.3.5
 Author:      Stephen Wright
 Author URI:  https://www.stewright.me/
 License:     GPL2
