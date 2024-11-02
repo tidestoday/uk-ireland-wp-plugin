@@ -1,6 +1,6 @@
 === Tides Today UK and Ireland tide times ===
 Contributors: sjwright1986
-Tags: sea, tide, tide tables, tide times, UK, Ireland
+Tags: sea, tide tables, tide times, UK, Ireland
 Requires at least: 4.3
 Tested up to: 6.6.2
 Stable tag: trunk
@@ -50,7 +50,7 @@ or without content:
 
 Full list of locations can be found on our [plugin page](https://tides.today/three-day-forecast-plugin/)
 
-** Test mode**
+**Debug Mode**
 Not getting data? Add this into your wp-config.php file:
 
 `define('TIDES_TODAY_DEBUG', true);`
