@@ -38,7 +38,7 @@ class TideTimes
 
     const DEFAULT_MAPS = true;
     
-    const TEST_MODE = 'TIDES_TODAY_TEST_MODE';
+    const TIDES_TODAY_WP_DEBUG = 'TIDES_TODAY_DEBUG';
 
     /**
      * TideTimes constructor.
@@ -115,7 +115,7 @@ class TideTimes
      */
     private function isDiagMode()
     {
-        return defined(self::TEST_MODE);
+        return defined(self::TIDES_TODAY_WP_DEBUG);
     }
 
     /**

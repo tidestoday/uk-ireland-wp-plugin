@@ -2,7 +2,7 @@
 Contributors: sjwright1986
 Tags: sea, tide, tide tables, tide times, UK, Ireland
 Requires at least: 4.3
-Tested up to: 5.6
+Tested up to: 6.6.2
 Stable tag: trunk
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,6 +32,8 @@ Simply drag and drop the widget into the sidebar through the WordPress dashboard
 
 **Shortcode usage**
 
+Note! When using the WordPress Gutenberg editor, you must choose the 'shortcode' block!
+
 The shortcode accepts the following parameters:
 * days - the number of days to show tide data for (max 3, default 3)
 * title - the title to show above the tide times (default 'Tide times')
@@ -51,7 +53,7 @@ Full list of locations can be found on our [plugin page](https://tides.today/thr
 ** Test mode**
 Not getting data? Add this into your wp-config.php file:
 
-`define('TIDES_TODAY_TEST_MODE', true);`
+`define('TIDES_TODAY_DEBUG', true);`
 
 **Legal stuff**
 
@@ -116,6 +118,9 @@ If using a shortcode, add the parameter 'map=true'. If you're using a sidebar wi
 4. Bellach ar gael yn y Gymraeg! Now available in Welsh!
 
 == Changelog ==
+
+= 1.3.4 =
+Fixed Guzzle issue, confirmed WP 6.2 support
 
 = 1.3.2 =
 Fixed Guzzle issue, added docker-compose
