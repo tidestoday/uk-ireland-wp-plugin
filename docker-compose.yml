@@ -1,11 +1,11 @@
 version: "3.7"
 
 services:
-    db:
+    wp-db:
         image: mysql:5.7
         volumes:
-            - mysqllogs:/var/log/mysql
-            - mysqldata:/var/lib/mysql
+            - wp-mysqllogs:/var/log/mysql
+            - wp-mysqldata:/var/lib/mysql
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: password123
@@ -17,7 +17,7 @@ services:
 
     wordpress:
         depends_on:
-            - db
+            - wp-db
         image: wordpress:latest
         volumes:
             - .:/var/www/html/wp-content/plugins/tides-today-uk-ireland-tide-times
@@ -25,14 +25,15 @@ services:
             - "8000:80"
         restart: always
         environment:
-            WORDPRESS_DB_HOST: db:3306
+            WORDPRESS_DB_HOST: wp-db:3306
             WORDPRESS_DB_USER: wordpress
             WORDPRESS_DB_PASSWORD: password123
             WORDPRESS_DB_NAME: wordpress
+            TIDES_TODAY_DEBUG: true
         networks:
             - wppluginnet
 networks:
    wppluginnet:
 volumes:
-    mysqldata:
-    mysqllogs:
+    wp-mysqldata:
+    wp-mysqllogs:
