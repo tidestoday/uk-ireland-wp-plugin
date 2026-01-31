@@ -128,7 +128,9 @@ class Widget extends \WP_Widget
             [
                 1 => __('1 day', Plugin::TEXTDOMAIN),
                 2 => __('2 days', Plugin::TEXTDOMAIN),
-                3 => __('3 days', Plugin::TEXTDOMAIN)
+                3 => __('3 days', Plugin::TEXTDOMAIN),
+                4 => __('4 days', Plugin::TEXTDOMAIN),
+                5 => __('5 days', Plugin::TEXTDOMAIN)
             ]
         );
         $mapField = new SelectWidgetInput(

@@ -12,7 +12,7 @@ class Plugin
 {
     const TEXTDOMAIN = 'tides-today';
 
-    const ENDPOINT = 'https://tides.today/widget-api/locations/';
+    const ENDPOINT = 'https://api.tidestoday.io/widgets-api/wordpress/locations/';
 
     /** @var string $pluginBase */
     private $pluginBase;

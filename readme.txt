@@ -2,7 +2,7 @@
 Contributors: sjwright1986
 Tags: sea, tide tables, tide times, UK, Ireland
 Requires at least: 4.3
-Tested up to: 6.6.2
+Tested up to: 6.9.0
 Stable tag: trunk
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -23,6 +23,7 @@ Features include:
 * **New for 1.1.0** Include a map of a location
 * **New for 1.1.0** Localised in Welsh
 * **New for 1.3.0** Test mode to diagnose issues
+* **New for 1.3.6** Maps load quicker and number of days increased to 5
 
 [youtube https://www.youtube.com/watch?v=JtjFDRzxNGE]
 
