@@ -11,6 +11,8 @@ Tides Today allows you to add up to 3 days tide times to your WordPress blog for
 
 == Description ==
 
+**End of life notice:** Tides Today UK and Ireland is now end of life and will be shut down on May 1st 2029. Please migrate to the [Tides Today Tides and Weather plugin](https://wordpress.org/plugins/tides-today-tides-and-weather/).
+
 Tides Today allows you to add tide data and a map to your WordPress blog for over 700 UK (and UK territories) and Irish locations. This plugin can be used either as a shortcode or as a sidebar widget.
 
 Features include:
@@ -93,6 +95,10 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 == Frequently Asked Questions ==
 
+= Why is this plugin being shut down? =
+
+Tides Today UK and Ireland is now end of life and will be shut down on May 1st 2029. Please migrate to the [Tides Today Tides and Weather plugin](https://wordpress.org/plugins/tides-today-tides-and-weather/).
+
 = Can I have more than one widget or shortcode on the page? =
 
 Yes
@@ -119,6 +125,9 @@ If using a shortcode, add the parameter 'map=true'. If you're using a sidebar wi
 4. Bellach ar gael yn y Gymraeg! Now available in Welsh!
 
 == Changelog ==
+
+= 1.3.7 =
+Added end of life notice and migration link.
 
 = 1.3.4 =
 Fixed Guzzle issue, confirmed WP 6.2 support
