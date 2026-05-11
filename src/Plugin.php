@@ -30,6 +30,7 @@ class Plugin
 
         add_action('widgets_init', [$this, 'registerWidget']);
         add_action('plugins_loaded', [$this, 'initiateLocalisation']);
+        add_action('admin_notices', [$this, 'displayEndOfLifeNotice']);
     }
 
     /**
@@ -68,6 +69,29 @@ class Plugin
     public function registerWidget()
     {
         register_widget('TidesToday\TideTimes\Widget');
+    }
+
+    /**
+     * Displays the end-of-life notice in the WordPress admin.
+     */
+    public function displayEndOfLifeNotice()
+    {
+        if (!current_user_can('activate_plugins')) {
+            return;
+        }
+
+        ?>
+        <div class="notice notice-warning">
+            <p>
+                <?php
+                printf(
+                    esc_html__('The Tides Today UK and Ireland plugin will be shut down May 1st 2029. Please migrate to the %s plugin', self::TEXTDOMAIN),
+                    '<a href="' . esc_url('https://wordpress.org/plugins/tides-today-tides-and-weather/') . '">' . esc_html__('Tides Today Tides and Weather', self::TEXTDOMAIN) . '</a>'
+                );
+                ?>
+            </p>
+        </div>
+        <?php
     }
 
     /**
