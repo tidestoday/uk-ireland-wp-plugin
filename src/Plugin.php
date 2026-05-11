@@ -76,6 +76,10 @@ class Plugin
      */
     public function displayEndOfLifeNotice()
     {
+        if (!current_user_can('activate_plugins')) {
+            return;
+        }
+
         ?>
         <div class="notice notice-warning">
             <p>
